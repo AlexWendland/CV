@@ -1,0 +1,165 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[left=1.5cm, right=1.5cm, top=1.3cm, bottom=1.3cm]{geometry}     %Page layout
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+\newcommand{\tab}{\hspace{10 pt}}
+
+\hyphenation{im-pre-se}
+
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Alex Wendland
+	}\bigskip\par}
+\vspace{-0.3 cm}
+\begin{center}
+	\textsc{Phone:} +44 7854033626 \hspace{1cm} GitHub: \href{https://github.com/AlexWendland}{https://github.com/AlexWendland} \hspace{1cm} \textsc{E-mail:} \href{mailto:alex@wendland.org.uk}{\texttt{alex@wendland.org.uk}}\\
+	\textsc{Website:} \href{https://warwick.ac.uk/fac/sci/maths/people/staff/wendland/}{https://warwick.ac.uk/fac/sci/maths/people/staff/wendland/}
+\end{center}
+
+%--------------------SECTIONS-----------------------------------
+
+%Section: Bio
+\section{Personal Statement}
+Analytically-, efficiently- and ethically-minded mathematician, python programmer and data scientists. Thirsty for new knowledge, experience and ideas, I push myself to learn whilst searching out places to apply myself for the largest positive impact. I am driven by problem solving, automation and the development of those around me. I believe everyone should seek to make their job easier whilst training the next person to take over from them.
+
+\vspace{-0.05 in}
+
+\section{Education}
+\begin{tabular}{rl}	
+	\textsc{} 2015 -- 2020 & PhD in \textsc{Mathematics}, \textbf{University of Warwick}, Coventry\\
+	& ``Generalisations of Groups and Cayley Graphs'' under the supervision of \href{https://homepages.warwick.ac.uk/~maslar/}{Agelos Georgakopoulos}\\
+	\textsc{} 2011 -- 2015& Masters in \textsc{Mathematics}, \textbf{University of Warwick}, Coventry\\
+	& 1\textsuperscript{st} Class Hons (91\% average)\\
+	\textsc{} 2004 -- 2011& Secondary school, \textbf{Beechen Cliff School}, Bath\\
+	&  A Levels: Further Maths ($A^{\ast}$), Maths ($A^{\ast}$), Physics ($A$)
+\end{tabular}
+
+\vspace{-0.05 in}
+
+\section{Key Skills}
+\begin{tabular}{rl}
+	Developer-level languages: &  Python and \textsc{LaTeX}\\
+	Working-level languages: & Java, Git, C, SQL, and JavaScript\\
+	Tools: & Github actions, Google suit, Docker, Kubernetes, and notion.\\
+	Transferable: & Mathematics, statistics, leadership, communication, problem solving, collaboration,\\
+	& agile organisation, research, and teaching. 	
+\end{tabular}
+\vspace{-0.05 in}
+
+\section{Employment History}
+\begin{tabular}{p{2.25cm}|p{15cm}}
+%
+% --- CRYPTO COMPARE ---
+%	
+	\textsc{2021--Current} & Data Scientist -- \textsc{CryptoCompare, London}\\
+	 & \footnotesize{Cryptocompare is a tech startup who aggregate Cryptocurrency data. I was a data scientist, python developer, and cross-team problem solver offering help where I could.}\\
+	 & \tab Consolidated order book index development\\
+	 & \footnotesize{\emph{Key skills}: \textbf{Product development, data science, docker, microserves, python, RabbitMQ, team coordination}.}\\
+	 & \footnotesize{I was tasked with developing an index from the new order book product. To test different methodologies against one another I developed a docker testing environment using microservices. I coordinated between the index and orderbook product team to find a market ready, client-adjustable and computationally feasible index.} \vspace{0.05 in}\\
+	 & \tab Automated data monitoring\\
+	 & \footnotesize{\emph{Key skills}: \textbf{Kubernetes, docker, data analysis, gtihub actions, team coordination, training, microservices, python}.}\\
+	 & \footnotesize{I coordinated with the technical support and devop teams to improve the quality and organisation of CryptoCompare’s automated data quality monitoring system. I developed a CI/CD pipeline using docker, github actions and kubernetes deployment files. Supporting the teams with training seminars, coding examples and code reviews to upskill them to become self-sufficient.} \vspace{0.05 in}\\	 
+	 & \tab Data visualisation platform\\
+	 & \footnotesize{\emph{Key skills}: \textbf{Market research, relationship building, client-relations, leadership, market development}.}\\
+	 & \footnotesize{I was tasked with finding industry partners to display the quality of our orderbook product. I researched and built relationships with data visualisation and analytics providers. To build meaningful relationships I had to coordinate internally with nearly every team to represent our company's interests and support the development of this relationship.This opened the door to Cryptocompare expanding into the institutional market with referral agreements.} \vspace{0.05 in}\\	
+	 & \tab Orderbook Data Quality\\
+	 & \footnotesize{\emph{Key skills}: \textbf{Mentoring, data analysis, communication, problem solving, cloud storage, python}.}\\
+	 & \footnotesize{To assist the orderbook development team with a new system I was tasked with checking the output data quality. I compared the output of the new system against the old, other data sets and itself to develop a set of key indicators of quality. I taught a data analyst to carry this out and supported them to develop a relationship with the orderbook team and carry out more bespoke analysis.} \vspace{0.05 in}\\	
+	 & \tab Ordebook snapshot regeneration\\
+	 & \footnotesize{\emph{Key skills}: \textbf{Python development, unix bash, client-delivery, cross-team working, big data, Cloud storage, SQL}.}\\
+	 & \footnotesize{A client wanted orderbook snapshots that previously were just used as a proof of concept. I wrote a program to review the health of the snapshots, identify bad quality snapshots, and then regenerate these. This was written using PEP 8 guidelines, code reviewed by the development team and documented. I taught a data analyst how to run the code in linux servers and the technical support team to QA the output. This is now run daily to deliver to a client and historically over TB’s of data stored in Azure.} \vspace{0.05 in}\\
+	 & \tab CCCAGG methodology\\
+	 & \footnotesize{\emph{Key skills}: \textbf{Latex, written communication, teamwork, mathematical formulation}.}\\
+	 & \footnotesize{The index team wanted to improve the documentation of our proprietary index. Working with the index team I learnt what our current service did with the data and formulated this in mathematical terms that was rigorous and yet could be understood by lay readers. I converted the documentation into latex to improve presentation and upskilled the team to use overleaf for collaboration.} \vspace{0.05 in}\\	
+\end{tabular}
+
+\begin{tabular}{p{2.25cm}|p{15cm}}
+	 & \tab Latency reporting\\
+	 & \footnotesize{\emph{Key skills}: \textbf{Data analysis, data visualisation, client-facing, communication, team coordination}.}\\
+	 & \footnotesize{A prospective client was interested in the company's data latency. I carried out some analysis on the latency statistics we currently collected. This data was complicated and inconsistent which required coordination with multiple teams to properly understand. I presented this to the client through multiple presentations, breaking down the sources of latency and understanding their key metrics. I worked with the development team to improve internal recording of this data for future clients.} \vspace{0.05 in}\\
+	 & \tab Team development and organisation\\
+	 & \footnotesize{\emph{Key skills}: \textbf{Interviewing, teaching, github, agile, jira, communication, relationship-building}.}\\
+	 & \footnotesize{When I joined Cryptocompare there was no data science team. I established a team with a clear role, a cross-company jira board, weekly reporting, a relationship with a C-suit representative, and training in the weekly python seminar. I built up the team by interviewing and hiring two PhD student interns and a data analyst. I wrote an analysts handbook for team members to look up information and set up 3 weeks of python training on github.} \vspace{0.05 in}\\		 
+	 \multicolumn{2}{c}{} \\
+%
+% --- CIVIL SERVICE ---
+%	 	 
+	\textsc{2020--2021} & Science and Engineering Fast Stream -- \textsc{Cabinet Office, London}\\&\footnotesize{The \href{https://www.faststream.gov.uk/}{Fast Stream} is a competitive three-year leadership programme focusing on developing individuals' communication, organisational and leadership skills.}\\ 
+	 & \tab \href{https://www.gov.uk/government/organisations/advisory-council-on-the-misuse-of-drugs}{Advisory Council for the Misuse of Drugs}\\
+	 & \footnotesize{\emph{Key skills}: \textbf{Research, project management, stakeholder management, written communication, cross-team coordination}.}\\
+&	\footnotesize{Within the ACMD I project managed high profile technical reports with multiple stakeholders: \href{https://www.gov.uk/government/publications/acmd-advice-on-consumer-cannabidiol-cbd-products}{ACMD advice on consumer cannabidiol (CBD) products} and \href{https://www.gov.uk/government/publications/consideration-of-barriers-to-research-part-1}{Consideration of barriers to research: part 1}. I acted to support the academics on the council whilst managing internal and external stakeholders.}\vspace{0.05 in}\\
+	 & \tab Peoples survey\\
+	 & \footnotesize{\emph{Key skills}: \textbf{Statistics, teamworking, data analysis, communication}.}\\
+	 &	\footnotesize{I analysed results of a staff survey across the whole of the Home Office to derive key targets and objects for my unit to increase inclusivity and diversity. After this I was asked to carry out a similar analysis for the whole department.}\vspace{0.05 in}\\	
+	 & \tab Coffee Roulette\\
+	 & \footnotesize{\emph{Key skills}: \textbf{Google suit, Javascript, Agile development, community building}.}\\
+	 &	\footnotesize{To increase networking within my cohort during covid I set up a weekly coffee roulette where you would meet one other member in the roulette. I used google forms to collect details with google sheets as a database and javascript within the sheet to send emails. I iteratively improved the process to allow people to go on holiday and change the frequency of matches.}\\
+\multicolumn{2}{c}{} \\
+%
+% --- ACADEMIA ---
+%
+	\textsc{2011--2020} & Academia -- \textsc{University of Warwick}\\
+	 & \footnotesize{Algebraic graph theory PhD student driven by problem-solving, teaching and community building.}\\
+	 & \tab Academic record and publications\\
+	 & \footnotesize{\emph{Key skills}: \textbf{Research, written/verbal communication, problem-solving.}}\\
+	 &	\footnotesize{I have always had a strong academic record, earning the Ron Lockhart Student Prize in 2013 and undertaking 2 funded research projects during my undergraduate. I have built a portfolio of solo and co-authored papers in leading journals within Graph Theory, Algebra and Probability such as \href{https://www.sciencedirect.com/science/article/pii/S0001870818303347}{Advances in Mathematics}, \href{https://imstat.org/journals-and-publications/annals-of-applied-probability/}{Annals of Applied Probability} and the \href{http://onlinelibrary.wiley.com/doi/10.1002/jgt.22002/abstract}{Journal of Graph Theory}. Please find a full list of publications on my \href{https://warwick.ac.uk/fac/sci/maths/people/staff/wendland/}{website}.}\vspace{0.05 in}\\	
+	 & \tab Conferences\\
+	 & \footnotesize{\emph{Key skills}: \textbf{Machine learning, teamwork, consulting, scheduling, communication}.}\\
+	 &	\footnotesize{I have attended multiple conferences and spoken at many universities including: Cambridge, Iceland, Imperial College and Oxford. I like investing time to deliver my message in a clear and concise fashion, focusing on communicating the transferable ideas. I attended two European Study Groups with Industry where I worked with a group of Mathematicians on an industrial problem. I worked on adversarial image classification for the \href{https://www.gov.uk/government/organisations/defence-science-and-technology-laboratory}{Defense, Science and Technology Laboratory} and scheduling problems for Heathrow airport.}\\	
+	 & \tab Teaching\\
+	 & \footnotesize{\emph{Key skills}: \textbf{Mentoring, organisation, communication, python, web development}.}\\
+	 &	\footnotesize{I have taught in all levels and formats: lecturing masters level courses to helping underprivileged A-Level students. I use my emotional intelligence to understand the perspective of the student, my analytical mind set to break this problem down, and excellent verbal and written communication skills to convey enough information so the student can discover the solution themselves. For this I won a student voted prize in 2017. I recieved funding in 2013 from \href{https://www.jisc.ac.uk/}{JISC} to develop a virtual learning platform in django.}\\
+	 & \tab \href{https://www.csap.cam.ac.uk/}{Centre for Science and Policy}\\
+	 & \footnotesize{\emph{Key skills}: \textbf{Natural language processing, self-directed learning, SQL, python, machine learning, python}.}\\
+	 &	\footnotesize{I earnt a funded 3 month UKRI policy internship where I taught myself Natural Language Processing (NLTK) to match policy makers to academic experts using the \href{https://www.csap.cam.ac.uk/}{Centre for Science and Policy}'s database. I accessed CSaP's database using SQL and manipulated the data with python, developing them an end product still used by the team today.}\vspace{0.05 in}\\
+	 & \tab Community building\\
+	 & \footnotesize{\emph{Key skills}: \textbf{Organisation, leadership, teamwork, communication}.}\\
+	 &	\footnotesize{I was a member of multiple departmental committees and university societies, actively organised networking events and for 3 years chaired the main student forum for change within the department. I organised the postgraduate seminar for a year and board games night for multiple years. I earned the ``giving to Warwick prize" in 2014.}\\
+\multicolumn{2}{c}{} \\
+\end{tabular}
+\vspace{-0.8cm}
+
+\section{Interests and Activities}
+I enjoy cycling, hiking, climbing, podcasts, board games and politics. I am actively involved in effective altruism and have given the \href{https://www.givingwhatwecan.org/}{Pledge}.
+
+\end{document}
