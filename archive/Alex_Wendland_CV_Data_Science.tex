@@ -1,0 +1,152 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[left=1.5cm, right=1.5cm, top=1.3cm, bottom=1.3cm]{geometry}     %Page layout
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Alex Wendland
+	}\bigskip\par}
+\begin{center}
+	\textsc{Phone:} +44 7854033626 \hspace{1cm} GitHub: \href{https://github.com/AlexWendland}{https://github.com/AlexWendland} \hspace{1cm} \textsc{E-mail:} \href{mailto:alex@wendland.org.uk}{\texttt{alex@wendland.org.uk}}\\
+	\textsc{Website:} \href{https://warwick.ac.uk/fac/sci/maths/people/staff/wendland/}{https://warwick.ac.uk/fac/sci/maths/people/staff/wendland/}
+\end{center}
+
+%--------------------SECTIONS-----------------------------------
+
+%Section: Bio
+\section{Bio}
+Ethically-, analytically- and efficiently-minded Mathematician and civil servant with an interest in Data Science and new technology. Thirsty for new knowledge, experience and ideas, I push myself to learn whilst searching out places to apply myself to generate the largest positive impact for society. Driven by automation, data insights and communication, I develop the infrastructure to make my job easier for future generations.
+
+My academic areas of interests are Algebra and Combinatorics with expertise in algebraic graph theory, and a focus on being interdisciplinary. During the course of my PhD I published papers in Probability, Graph Theory, Algebra and Steel making. I undertook projects outside my field focusing on natural language processing, adversarial image classification, logistics, epidemiology and ethics of mathematics. For these I developed skills in Python, Java, SQL and Latex.
+
+Communication is one of my key skills and I always look to develop if further. During my PhD, I gave talks at a variety of universities including: Cambridge, Glasgow, Iceland, Oxford and Warwick. As a teacher, I learned to understand the students' viewpoint and present the information that most aligns with their prospective. As a team member, on multiple projects, I focused on understanding and managing expectations, deciding on minimum viable products and establishing time lines. As a leader in the civil service, I curate relationships, brought stakeholders on board, and set a unified vision.
+
+%Section: Education
+\section{Education}
+\begin{tabular}{rl}	
+	\textsc{} 2015 -- 2020 & PhD in \textsc{Mathematics}, \textbf{University of Warwick}, Coventry\\
+	& ``Generalisations of Groups and Cayley Graphs'' under the supervision of \href{https://homepages.warwick.ac.uk/~maslar/}{Agelos Georgakopoulos}\\
+	%& 110/110 \small\emph{summa cum laude} | Major: Quantitative Finance\\
+	%& Thesis: ``Sublinear and Locally Sublinear Prices'' | \small Advisor: Prof. Erio \textsc{Castagnoli}\\
+	%&\normalsize \textsc{Gpa}: 28.61/30\hyperlink{grds}{\hfill | \footnotesize Detailed List of Exams}\\
+	\textsc{} 2011 -- 2015& Masters in \textsc{Mathematics}, \textbf{University of Warwick}, Coventry\\
+	& 1\textsuperscript{st} Class Hons (91\% average)\\
+	\textsc{} 2004 -- 2011& Secondary school, \textbf{Beechen Cliff School}, Bath\\
+	&  A Levels: Further Maths ($A^{\ast}$), Maths ($A^{\ast}$), Physics ($A$)\\
+\end{tabular}
+
+\section{Publications}
+\begin{itemize}
+	\item
+	A. Georgakopoulos, and A. Wendland. \href{https://arxiv.org/abs/2007.06432}{\emph{Presentations for Vertex Transitive Graphs.}} Pre-publication, Arxiv:2007.06432.
+	\item 
+	S. Spooner, A. Wendland, Z. Li, S. Sridhar, M. A. Williams and J. M. Warnett \emph{The Effects of Height and Blow Time on Droplet-Size-Distributions in the Emulsion Phase of a BOF}. Pre-publication, Available on request.
+	\item 
+	G. Morina, K. Latuszynsky, P. Nayar, and A. Wendland. \href{https://arxiv.org/abs/1912.09229}{\emph{From the Bernoulli Factory to a Dice Enterprise via Perfect Sampling of Markov Chains.}} Annals of Applied Probability, to appear.
+	\item
+	D. Rumynin and A. Wendland. \href{https://www.sciencedirect.com/science/article/pii/S0001870818303347}{\emph{2-Groups, 2-Characters and Burnside Rings}}. Advances in Mathematics, 338: 196-236, 2018.
+	\item
+	A. Wendland. \href{http://onlinelibrary.wiley.com/doi/10.1002/jgt.22002/abstract}{\emph{Coloring of Plane Graphs with Unique Maximal Colors on Faces}}. J. Graph Theory, 83(4):359–371, 2016.
+\end{itemize}
+
+\section{Programming Projects}
+\begin{tabular}{rl}
+	Intermediate Knowledge:&  \textsc{LaTeX}, Python and Java\\
+	Basic Knowledge:& Matlab, \textsc{MAGMA}, C, SQL and JavaScript\\
+\end{tabular}\\
+\vspace{0.1 in}\\
+\begin{tabular}{p{2.25cm}|p{15cm}}
+	\textsc{Spring 2019} & European Study Group with Industry -- \textsc{University of Cambridge} \\&\footnotesize{I partook in a weeklong conference where a team of mathematicians and I worked on a problem set by the Defence, Science and Technology Laboratory , UK Government. The question was ``How do you train image classifiers robust against adversarial agents?’’ For comparison, we implemented several approaches from the literature using TensorFlow.}\\\multicolumn{2}{c}{} \\
+	\textsc{Winter 2019} & EPSRC-funded Policy Internship -- \textsc{Centre for Science and Policy, University of Cambridge}\\&\footnotesize{I worked on a Natural Language Processing project on the profiles of experts to better enable search methods. These tools are now being used to understand how different areas of policy draw upon the same pool of experts to inform cross governmental cooperation. I accessed CSaP's database, processing data using python (NlTK) and SQL. Please find a depository on my GitHub with code to date.}\\\multicolumn{2}{c}{} \\
+	\textsc{Summer 2018}& Droplet size analysis -- \textsc{University of Warwick, Warwick Manufacturing Group}\\&\footnotesize{I used MatLab to analyse the distribution of gas droplet radii within a steel mixing furnace for the paper ``The Effects of Height and Blow Time on Droplet-Size Distributions in the Emulsion Phase of a BOF''. I deployed statistical techniques such as chi-squared to test different fitting distributions.}\\\multicolumn{2}{c}{} 
+\end{tabular}
+\begin{tabular}{p{2.25cm}|p{15cm}}
+	\textsc{Summer 2018} & European Study Group with Industry -- \textsc{University of Bath} \\&\footnotesize{I attended a weeklong conference where a team of mathematicians and I worked on a problem set by Heathrow Airport. The question was ``Is it cost effective to schedule construction work?’’ for this we analysed 5 years of project data provided by Heathrow. We designed a data driven statistical model in Python and trialled out the cost effectiveness of different scheduling strategies. Please find a selection of the code on my GitHub account.}\\\multicolumn{2}{c}{} \\
+	\textsc{Summer 2013} & Summer of Student Innovation -- \textsc{JISC, London} \\&\footnotesize{Three peers and I won £5000 to develop a Virtual Learning Environment aimed at enabling non-Maths university students to learn university level Mathematics. The USP of the project was a question generator that used decision trees to understand where students made mistakes. This was called Mimir and the depository is available on my GitHub.}\\\multicolumn{2}{c}{} \\
+	\textsc{2012--2013} & Hypochondriapp -- \textsc{University of Warwick, Computer Science department} \\&\footnotesize{Two peers and I programmed an epidemiology modelling Android App with a Java server back end. The server used twitter data to access the density of `illness' within areas of London, then used Transport for London data with a cellular automaton styled model to predict the future spread. Please find the code on my GitHub account.}\\\multicolumn{2}{c}{}
+\end{tabular}
+
+\section{Employment History}
+\begin{tabular}{p{2.25cm}|p{15cm}}
+	\textsc{2020--Current} & Science and Engineering \href{https://www.faststream.gov.uk/}{Fast Stream} -- \textsc{Cabinet Office, UK Civil Service}\\&\footnotesize{This is a competitive three-year leadership programme focusing on developing individuals communication, organisational and leadership skills. The science and engineering stream additionally builds candidates on science communication and analysis. My placement is within the \href{https://www.gov.uk/government/organisations/advisory-council-on-the-misuse-of-drugs}{Advisory Council for the Misuse of Drugs} (ACMD) where I lead on multiple high profile works including \href{https://www.gov.uk/government/news/commercial-cannabidiol-cbd-products-call-for-evidence}{Consumer Cannabidiol (CBD) products}, and \href{https://www.gov.uk/government/publications/barriers-to-research-beyond-cannabinoids-call-for-evidence}{Barriers to research}. Internally, I work on automating processes, building data infrastructure and improving management practices across Home Office Science.}\\\multicolumn{2}{c}{} \\
+	\textsc{2015--2020} & Postgraduate Teacher -- \textsc{University of Warwick}\\&\footnotesize{I have a wide background in teaching, please see my webpage for an exact listing of rolls. These include: lecturing; class teacher (1st year to 4th year of undergraduate mathematics and computer science); supervising 1st years in a one on five setting; giving revision lectures to up to 400 attendees; one on one sessions with students with special learning difficulties. Teaching is one of my richest forms of personal and professional development	. Learning how different people think and view problems has given me countless insights into how people behave when challenged.}\\\multicolumn{2}{c}{} \\
+\end{tabular}
+
+\section{Awards and Grants}
+\begin{tabular}{p{2.25cm}|p{15cm}}
+	\textsc{2015--2020}& Engineering and Physical Sciences Research Council Doctoral Award -- \textsc{University of Warwick}\\&\footnotesize{Funding to undertake a PhD in Mathematics at the University of Warwick.}\\\multicolumn{2}{c}{} \\
+	\textsc{2018--19}& UKRI Policy Internship -- \textsc{EPSRC}\\&\footnotesize{Awarded 3 months of additional PhD funding and £2,400 travel and living costs to undertake an internship at the \href{https://www.csap.cam.ac.uk/}{Centre for Science and Policy} at the University of Cambridge.}\\\multicolumn{2}{c}{} \\
+	\textsc{2016--17}& Mathematics Institute Postgraduate Teaching Prize -- \textsc{University of Warwick}\\&\footnotesize{From the award: ``These are awarded to supervisors and TAs by vote of the undergraduates, so are earned through the genuine appreciation of people taught in 2016-17.”}\\\multicolumn{2}{c}{} \\
+	\textsc{2013--14}& Undergraduate Research Scholarship Scheme -- \textsc{University of Warwick}\\&\footnotesize{Awarded £1000 for a summer project with Dr Krzysztof Latuszynski in University of Warwick in 2013. Awarded £1000 for a summer project with Professor Daniel Král' in University of Warwick, Charles University and the University of West Bohemia in 2014, which was also supported by Graph coloring and structure grant of the Czech Science Foundation.}\\\multicolumn{2}{c}{} \\
+	\textsc{2013--14}& Giving to Warwick Student Prize -- \textsc{University of Warwick}\\&\footnotesize{From the award: ``In recognition of outstanding contribution to the Department of Mathematics”}\\\multicolumn{2}{c}{} \\
+	\textsc{2013}& Summer of student innovation -- \textsc{JISC}, Bristol\\&\footnotesize{Awarded £5000 to develop a virtual learning platform for university students teaching them graduate level techniques.}\\\multicolumn{2}{c}{} \\
+	\textsc{2012--13}& Ron Lockhart Student Prize -- \textsc{University of Warwick}\\&\footnotesize{``In recognition of Academic excellence and outstanding contribution to the Mathematics Institute."}\\\multicolumn{2}{c}{} \\
+\end{tabular}
+
+\section{Interests and Activities}
+I enjoy cycling, hiking, climbing, pod-casts, board games and politics. I search for new experiences and cherish understanding different perspective on life. I have been developing an interest in Behavioural Science and attending seminars on its impact in policy. I have made the giving \href{https://www.givingwhatwecan.org/}{Pledge}.
+
+\end{document}

@@ -1,0 +1,246 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+%\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+\usepackage[left=1.5cm, right=1.5cm, top=1.3cm, bottom=1.3cm]{geometry}
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Alex Wendland
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+\section{Personal Data}
+
+\begin{tabular}{rl}
+    \textsc{Work Address:}   & 2 Marsham Street, London, SW1P 4DF\\
+    \textsc{Phone:}     & +44 7854033626\\
+    \textsc{E-mail:}     & \href{mailto:alex@wendland.org.uk}{\texttt{alex@wendland.org.uk}}\\
+\textsc{Website:} & \href{https://warwick.ac.uk/fac/sci/maths/people/staff/wendland/}{https://warwick.ac.uk/fac/sci/maths/people/staff/wendland/}
+\end{tabular}
+
+\section{Interests}
+I have academic interests in Algebraic Combinatorics and data science but regularly attend seminars in all scientific and policy disciplines. The podcasts I listen to range from philosophy, politics, economics, psychology, and science. I take programming opportunities wherever they lie and like to think about how to optimise the organisation of any system I am involved in.
+
+%Section: Education
+\section{Education}
+\begin{tabular}{rl}	
+\textsc{} 2015 -- 2020 \hspace{-0.12cm} & PhD in \textsc{Mathematics}, \textbf{University of Warwick}, Coventry\\
+& ``Generalisations of Groups and Cayley Graphs'' under the supervision of \href{https://homepages.warwick.ac.uk/~maslar/}{Agelos Georgakopoulos}\\
+%& 110/110 \small\emph{summa cum laude} | Major: Quantitative Finance\\
+%& Thesis: ``Sublinear and Locally Sublinear Prices'' | \small Advisor: Prof. Erio \textsc{Castagnoli}\\
+%&\normalsize \textsc{Gpa}: 28.61/30\hyperlink{grds}{\hfill | \footnotesize Detailed List of Exams}\\
+\textsc{} 2011 -- 2015& Masters in \textsc{Mathematics}, \textbf{University of Warwick}, Coventry\\
+& 1\textsuperscript{st} Class (Hons)\\
+\textsc{} 2004 -- 2011& Secondary school, \textbf{Beechen Cliff School}, Bath\\
+&  A Levels: Further Maths ($A^{\ast}$), Maths ($A^{\ast}$), Physics ($A$)\\
+\end{tabular}
+
+
+\section{Publications and Preprints}
+\begin{itemize}
+	\item
+	A. Georgakopoulos, M. Hamann, and A. Wendland. \href{https://arxiv.org/abs/2007.06432}{\emph{Presentations for Vertex Transitive Graphs.}} Pre-publication, Arxiv:2007.06432.
+	\item 
+	S. Spooner, A. Wendland, Z. Li, S. Sridhar, M. A. Williams and J. M. Warnett \emph{The Effects of Height and Blow Time on Droplet-Size-Distributions in the Emulsion Phase of a BOF}. Pre-publication, Available on request.
+	\item 
+	G. Morina, K. Latuszynsky, P. Nayar, and A. Wendland. \href{https://arxiv.org/abs/1912.09229}{\emph{From the Bernoulli Factory to a Dice Enterprise via Perfect Sampling of Markov Chains.}} Pre-publication, Arxiv:1912.09229.
+	\item
+	D. Rumynin and A. Wendland. \href{https://www.sciencedirect.com/science/article/pii/S0001870818303347}{\emph{2-Groups, 2-Characters and Burnside Rings}}. Advances in Mathematics, 338: 196-236, 2018.
+	\item
+	A. Wendland. \href{http://onlinelibrary.wiley.com/doi/10.1002/jgt.22002/abstract}{\emph{Coloring of Plane Graphs with Unique Maximal Colors on Faces}}. J. Graph Theory, 83(4):359–371, 2016.
+\end{itemize}
+
+\section{Selected Seminars and Talks}
+\begin{tabular}{rl}
+\textsc{May.} 2018 & Geometry and Topology Seminar, University of Glasgow\\
+& ``Presenting vertex-transitive graphs like groups"\\
+\textsc{May.} 2018 & Junior Geometry and Topology Seminar, University of Oxford\\
+& ``Presenting vertex-transitive graphs like groups"\\
+\textsc{Feb.} 2018 & Mathematics Colloquium, University of Iceland\\
+& ``Facially restricted graph colouring's"\\
+\textsc{May} 2017 & Junior Geometry and Topology seminar, University of Warwick\\
+& ``Finiteness conditions in infinite groups"\\
+\textsc{Feb.} 2017 & Junior Algebra seminar, University of Cambridge\\
+& ``Group distance"\\
+\textsc{Aug.} 2016 & Young Researchers in Mathematics, University of St Andrews\\
+& ``Planar Groups"\\
+\textsc{Feb.} 2015 &  Warwick Imperial Spring Meeting, Imperial Collage London\\
+& ``The Coin Game"\\
+\textsc{Feb.} 2013 & Tomorrows Mathematician Conference, University of Surrey\\
+& ``Bernouli Factory via Markov Chains"\\
+\end{tabular}
+
+\section{Professional Experience}
+\begin{tabular}{r|p{14.2 cm}}
+\textsc{October 2020 -} & Science and Engineering Fast Stream -- \textsc{UK Civil Service}\\&\footnotesize{This is a competitive three year leadership program with the UK Civil Service. Focusing on developing individuals to take up senior civil service positions after its completion. The science and engineering stream focuses on science communication and reasoning. My first placement is in the science secretariat within the Advisory Council for the Misuse of Drugs (ACMD) where I am leading a project on online drug markets.}\\\multicolumn{2}{c}{} \\
+\textsc{April 2019} & European Study Group with Industry -- \textsc{University of Cambridge}\\&\footnotesize{This was a week long conference where I worked with a group of Mathematicians from a mix of backgrounds on a project for the Defence Science and Technology Laboratory, UK government. We investigated methods to harden image classifiers against malicious attacks.}\\\multicolumn{2}{c}{} \\
+\textsc{January - April 2019} & EPSRC-funded Policy Internships Scheme -- \textsc{Centre for Science and Policy, University of Cambridge}\\&\footnotesize{The Centre for Science and Policy's main mission is to connect policy makers with academics to encourage science based approachs to problems. During my internship I met policy makers and academics, attending talks on multiple topics such as the Post-Brexit Agricultural Policy, Solar Panel Technology and Climate Change. My main project in CSaP used NLP techniques on their database to find experts for a given question.}\\\multicolumn{2}{c}{} \\
+\textsc{Summer 2018} & The Effects of Height and Blow Time on Droplet-Size-Distributions in the Emulsion Phase of a BOF -- \textsc{Warwick Manufacturing Group}\\&\footnotesize{This is joint work with Stephen Spooner, Zushu Li, Seetharaman Sridhar, Mark A Williams and Jason M. Warnett studying the distribution of droplet sizes in a steel mixing furnace. I worked within MatLab to analysis and compare different distributions to see how they fit the data. The work is in the process of being published.}\\\multicolumn{2}{c}{} \\
+\textsc{July 2018} & European Study Group with Industry -- \textsc{University of Bath}\\&\footnotesize{This was a week long conference where I worked with a team of Mathematicians from different universities on a scheduling problem for Heathrow Airport. We produced a model of the problem and tried to validate it against real world data. From the model we drew conclusions on the cost effectiveness of changing strategies.}\\\multicolumn{2}{c}{} \\	
+\textsc{February 2018} & Research visit to R\"{o}gnvaldur M\"{o}ller -- \textsc{University of Iceland}, Reykjavik\\&\footnotesize{Funded by the University of Warwick and the University of Iceland.}\\\multicolumn{2}{c}{} \\
+\textsc{Summer 2014} & Research project with Professor Daniel Kr\'{a}l' -- \textsc{University of Warwick, Charles University and University of west Bohemia}\\&\footnotesize{Funded by the Undergraduate Research Scholarship Scheme and the Graph coloring and structure grant of the Czech Science Foundation. The project involved an Academic visit to Charles University in Prague to work with Zdenek Dvorák and Ondrej Pangrác as well as to the University of West Bohemia to work with Tomás Kaiser. Published in the \href{http://onlinelibrary.wiley.com/doi/10.1002/jgt.22002/abstract}{Journal of graph theory}}\\\multicolumn{2}{c}{} \\
+\textsc{Summer 2013} & Summer of Student Innovation -- \textsc{JISC}, Coventry\\&\footnotesize{Three peers and I started to develop a Mathematical virtual learning platform aimed at non-maths graduate students called Mimir. The unique selling point was to have a system that diagnosed where potential errors in students' calculations were made.}\\\multicolumn{2}{c}{} \\
+\textsc{Summer 2013} & Research project with Dr Krzysztof Latuszynski -- \textsc{University of Warwick}, Coventry\\&\footnotesize{Funded by the Undergraduate Research Scholarship Scheme at Warwick University. We use Markov chains to find effective methods of simulating a $f(p)$-coin given a $p$-coin, this work is now in a paper with Krzysztof Latuszynski, Giulio Morina, and Piotr Nayar.}\\\multicolumn{2}{c}{} \\
+\textsc{2010 - 2012} & Team member / Retail supervisor -- \textsc{Odeon Cinema}, Bath\\&\footnotesize{During sixth form, I worked in a large team responsible for the operations of a cinema. Within my first year I was promoted to a retail supervisor in charge of the customer retail team and managing stock level.}\\\multicolumn{2}{c}{} \\
+\end{tabular}
+
+\section{Awards and Grants}
+\begin{tabular}{r|p{16cm}}
+\textsc{2016 -- 17}& Mathematics Institute Postgraduate Teaching Prize -- \textsc{University of Warwick}, Coventry\\&\footnotesize{``These are awarded to supervisors/TAs by vote of the undergraduates, so are earned through the genuine appreciation of people you taught in 2016 -- 17.”}\\\multicolumn{2}{c}{} \\
+\textsc{2015 -- 19}& Engineering and Physical Sciences Research Council Doctoral Award -- \textsc{University of Warwick}, Coventry\\&\footnotesize{Funding to undertake a PhD in Mathematics at the university of Warwick.}\\\multicolumn{2}{c}{} \\
+\textsc{2014}& Undergraduate Research Scholarship Scheme -- \textsc{University of Warwick}, Coventry\\&\footnotesize{Awarded £1000 to do a summer project with Professor Daniel Král' in University of Warwick, Charles University and the University of West Bohemia. This was also supported by Graph coloring and structure grant of the Czech Science Foundation.}\\\multicolumn{2}{c}{} \\
+\end{tabular}
+
+
+\begin{tabular}{r|p{16.2cm}}
+\textsc{2013 -- 14}& Giving to Warwick Student Prize -- \textsc{University of Warwick}, Coventry\\&\footnotesize{``In recognition of outstanding contribution to the department with the department of Mathematics”}\\\multicolumn{2}{c}{} \\
+\textsc{2013}& Summer of Student Innovation -- \textsc{JISC}, London\\&\footnotesize{Award £5000 to develop a virtual learning platform for university students teaching them graduate level techniques.}\\\multicolumn{2}{c}{} \\
+\textsc{2013} & Undergraduate Research Scholarship Scheme -- \textsc{University of Warwick}, Coventry\\&\footnotesize{Awarded £1000 to do a summer project with Dr Krzysztof Latuszynsky in University of Warwick.}\\\multicolumn{2}{c}{} \\
+\textsc{2012 -- 13}& Ron Lockhart Student Prize -- \textsc{University of Warwick}, Coventry\\&\footnotesize{``In recognition of Academic excellence and outstanding contribution to the Mathematics Institute."}\\\multicolumn{2}{c}{} \\
+\end{tabular}
+
+%Section: Work Experience at the top
+\section{Teaching Experience}
+\begin{tabular}{r|p{15cm}}
+\textsc{2020 -- Current} & Volunteer tutor -- \textsc{Access Project}, London\\&\footnotesize{Volunteering for the Access project which provides tutoring to students from disadvantaged backgrounds in A-level and GCSE Mathematics.}\\\multicolumn{2}{c}{} \\
+\textsc{2019} & Lecturer -- \textsc{University of Warwick}, Coventry\\&\footnotesize{Employed by Warwick Maths department to give lectures for the 4th year course Group Theory and covered lectures for the 3rd year course Groups and Representations. In the initial feedback for group theory the course I received the comment ``Alex is one of the best lecturers I've ever had.''}\\\multicolumn{2}{c}{} \\
+\textsc{2015 -- 2020} & Class Teacher -- \textsc{University of Warwick}, Coventry\\&\footnotesize{Employed by Warwick Maths and Computer Science Departments to run the Support Classes for the modules: Analysis 1, Discrete Maths and its Applications 2, Experimental Maths, Geometric group theory, Group Theory, Groups and Representations, Lie Algebras, and Set Theory. I received the following feedback when my students voted for me to win the Postgraduate teaching award in 2017 ``Just an all round nice guy who marks work quick and gives good feedback with amazing subject knowledge.''}\\\multicolumn{2}{c}{} \\
+\textsc{2015 -- 2020}& Marking -- \textsc{University of Warwick}, Coventry\\&\footnotesize{Exam marking for modules: Algebra I, Foundations, Introduction to Abstract Algebra, Lie Algebras, and Set theory.}\\\multicolumn{2}{c}{} \\
+\textsc{2014 -- 2017} & Supervisions -- \textsc{University of Warwick}, Coventry\\&\footnotesize{Employed by Warwick Maths department to supervise two groups of five first year students helping with each of their core modules and mark work weekly.}\\\multicolumn{2}{c}{} \\
+\textsc{2013 -- 2019}& Revision lectures -- \textsc{University of Warwick}, Coventry\\&\footnotesize{I have given multiple revision lectures at the University of Warwick for Foundations, Analysis 1, Analysis 2, Linear Algebra, Algebra 1 and Set Theory as well as catch up lectures for struggling students during term.}\\\multicolumn{2}{c}{} \\
+\textsc{2013 -- 2014} & Academic support for Warwick Maths Society -- \textsc{University of Warwick}, Coventry\\&\footnotesize{In the role of Academic support for Warwick Maths Society I have ran weekly drop in sessions for students, helping with material from all years.}\\\multicolumn{2}{c}{} \\
+\end{tabular}
+
+\section{Positions of Responsibility}
+\begin{tabular}{r|p{15cm}}
+\textsc{2017 -- Current}& Reviewing Articles -- \textsc{University of Warwick}, Coventry\\&\footnotesize{I have reviewed articles for publication.}\\\multicolumn{2}{c}{} \\
+\textsc{2016 -- Current}& Diversity Committee -- \textsc{University of Warwick}, Coventry\\&\footnotesize{I am a member of the diversity committee as a Postgraduate representative. I have contributed to the successful submission for a Bronze Athena Swan award for the Mathematics department in 2017.}\\\multicolumn{2}{c}{} \\
+\textsc{2016 -- 2017}& Postgraduate Seminar Organiser -- \textsc{University of Warwick}, Coventry\\&\footnotesize{I have organized the Postgraduate Seminar for this Academic year. Organising a years’ worth of talks as well as the Postgraduate talks for two open days.}\\\multicolumn{2}{c}{} \\
+\textsc{2015 -- Current}& Staff and Graduate student Liaison Committee -- \textsc{University of Warwick}, Coventry\\&\footnotesize{I am an active member of the Staff and Graduate student Liaison Committee for the Warwick Maths department. Joint chair from 2017 to 2018.}\\\multicolumn{2}{c}{} \\
+\textsc{2013 -- 14}& Academic Support for WMS -- \textsc{University of Warwick}, Coventry\\&\footnotesize{I was the Academic Support for Warwick Maths Society where I organised a host of revision lectures given by myself and others for the exam period. I also ran weekly drop in sessions, LaTeX support classes, lecture catch up sessions and helped with activities ran by the society such as socials, academic talks and careers events.}\\\multicolumn{2}{c}{} \\
+\end{tabular}
+\begin{tabular}{r|p{15cm}}
+\hspace{1cm}\textsc{2011 -- 15}& Student Staff Liaison Committee -- \textsc{University of Warwick}, Coventry\\&\footnotesize{I have been an active member of the Student Staff Liaison Committee since first year and chaired the Committee for my third and fourth years at university. In this role I represented students and their issues in the Committee, as chair I represented the student body in the Staff meetings and Teaching committee meetings.}\\\multicolumn{2}{c}{} \\
+\end{tabular}
+
+%Section: Languages
+%\section{Languages}
+%\begin{tabular}{rl}
+% \textsc{Italian:}&Mothertongue\\
+%\textsc{English:}&Fluent\\
+%\textsc{French:}&Basic Knowledge\\
+%\end{tabular}
+
+\section{Programming Projects}
+\begin{tabular}{rl}
+	Intermediate Knowledge:&  \textsc{LaTeX}, Python and Java\\
+	Basic Knowledge:& Matlab, \textsc{MAGMA}, C, SQL and Lua\\
+	GitHub:& \href{https://github.com/AlexWendland}{https://github.com/AlexWendland}
+\end{tabular}\\
+\vspace{0.1 in}\\
+\begin{tabular}{r|p{15.3cm}}
+	\textsc{April 2019} & European Study Group with Industry -- \textsc{University of Cambridge} \\&\footnotesize{This was a week long conference where I worked with a group of Mathematicians from a mix of backgrounds on a project for the Defence Science and Technology Laboratory, UK government. We used PyTorch (a python neural network package) to make image classifiers, which we then attacked using different styles of perturbation attacks. We investigated how to harden these image classifiers against such attacks.}\\\multicolumn{2}{c}{} \\
+	\textsc{Spring 2019} & EPSRC-funded Policy Internship -- \textsc{Centre for Science and Policy, University of Cambridge}\\&\footnotesize{Working on a Natural Language Processing project on the profiles of experts to better enable search methods. These tools are also being used to understand how different areas of policy draw upon the same pool of experts to better inform cross governmental cooperation. For this project I have been given access to CSaP's database, processing data using Python and SQL. Code on my GitHub account.}\\\multicolumn{2}{c}{} \\
+	\textsc{Summer 2018}& Droplet size analysis -- \textsc{University of Warwick, Warwick Manufacturing Group}\\&\footnotesize{For the paper ``The Effects of Height and Blow Time on Droplet-Size Distributions in the Emulsion Phase of a BOF'' I used MatLab to analyse the distribution of gas droplet radii within a steel mixing furnace. I deployed statistical techniques such as chi-squared tests and data visualisation to give insights into the mixing process.}\\\multicolumn{2}{c}{} \\
+	\textsc{Summer 2018} & European Study Group with Industry -- \textsc{University of Bath} \\&\footnotesize{I attended a weeklong conference where a team of Mathematicians worked on a problem set by Heathrow Airport. The question was ``is it cost effective to schedule construction work?’’ For this we analysed 5 years of project data provided by Heathrow. We designed a data driven statistical model in Python and trialled out the cost effectiveness of different scheduling strategies. Code on my GitHub account.}\\\multicolumn{2}{c}{} \\
+	\textsc{Summer 2013} & Summer of Student Innovation -- \textsc{JISC, London} \\&\footnotesize{Three students and I won £5000 of funding to develop a Virtual Learning Environment aimed at non-Maths university students to learn university level Mathematics. The USP of the project was a question generator that used decision trees to understand where students made mistakes. This was called Mimir and the depositary is available on my GitHub.}\\\multicolumn{2}{c}{} \\
+	\textsc{2012--2013} & Hypochondriapp -- \textsc{University of Warwick, Computer Science department} \\&\footnotesize{Two students and I programmed an Android App with a Java server back end as part of the Group Programming Project during the 2nd year of my undergraduate degree. The server used twitter data to access the density of `illness' within areas of London, then used Transport for London data with a cellular automaton styled model to predict the future spread of flu. Code on my GitHub account.}\\\multicolumn{2}{c}{} \\
+\end{tabular}
+
+\section{Interests and Activities}
+I enjoy cycling, hiking, climbing, playing board games, economics, Psychology, and politics. I also take an interest in machine learning, programming in my free time.\\
+%
+%\newpage
+%\par{\centering\Large \hypertarget{grds}{A-Levels}\par}\normalsize
+%\begin{center}
+%\begin{tabular}{ll}
+%\multicolumn{1}{c}{\textsc{Exam}}&\textsc{Grade}\\ \hline \\
+%\textsc{A-levels}\\
+%Mathematics	& \quad A*\\
+%Further Mathematics	&\quad A\\
+%Physics	&\quad A*\\
+%Chemistry	&\quad A\\
+%General Studies&\quad A\\ \\
+%\textsc{AS-levels}\\
+%Geography	&\quad A\\
+%Critical Thinking	&\quad C\\
+%\\
+%
+%\end{tabular}
+%\end{center}
+\bigskip
+\bigskip
+\bigskip
+%\hrule
+
+%\newpage
+%\hypertarget{gmat}{\textsc{Gmat}\setmainfont{LMRoman10 Regular}\textregistered\setmainfont[SmallCapsFont=Fontin-SmallCaps]{Fontin-Regular}}
+
+%\XeTeXpdffile ''GMAT.pdf'' page 1 scaled 800
+
+\end{document}
