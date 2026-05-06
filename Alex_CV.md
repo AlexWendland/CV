@@ -13,13 +13,13 @@ header:
 
 **Software Engineer**
   ~ Man Group
-  ~ 07/2023 - Present
+  ~ 07/2023 - 01/2026
 
-- Built an event-driven data quality framework on top of Kafka, Ray and Postgres. Adopted by 3 teams and deployed to over 50 datasets.
-- Enabled annual database cost savings of £250K/year by migrating to a horizontally scaled Apache Arrow Flight server handling 1 Gi/second.
-- Sought to tripple datasets onboarding from 50 to 150 datasets per year by moving to a medallion data architecture backed by iceberg and a low code custom EL framework.
+- Built an event-driven data quality framework on top of Kafka, Ray and Postgres with a front end in React. Adopted by 3 teams and deployed to over 50 datasets.
+- Enabled annual database cost savings of £250K/year by migrating to a horizontally scaled Apache Arrow Flight server handling 1 GB/s.
+- Drove initiative to triple datasets onboarding from 50 to 150 datasets per year by moving to a medallion data architecture backed by Iceberg and a low-code custom EL framework.
 - Boosted fund chargeback by £80K/year by implementing Snowflake cost monitoring.
-- Led a multi-team initiative to integrate LLM-powered code reviews in Bitbucket used by other 70 repos internally.
+- Led a multi-team initiative to integrate LLM-powered code reviews in Bitbucket used by over 70 repos internally.
 
 
 **Head of Data**
@@ -42,7 +42,7 @@ header:
   ~ University of Warwick
   ~ 09/2015 - 09/2020
 
- - 	Won multiple academic awards building a strong research portfolio by publishing in leading journals such as [Advances in Mathematics](https://www.sciencedirect.com/science/article/pii/S0001870818303347), [Annals of Applied Probability](https://projecteuclid.org/journals/annals-of-applied-probability/volume-32/issue-1/From-the-Bernoulli-factory-to-a-dice-enterprise-via-perfect/10.1214/21-AAP1679.short) and the [Journal of Graph Theory](http://onlinelibrary.wiley.com/doi/10.1002/jgt.22002/abstract).
+- Built a strong research portfolio, winning multiple academic awards, with publications in leading journals such as [Advances in Mathematics](https://www.sciencedirect.com/science/article/pii/S0001870818303347), [Annals of Applied Probability](https://projecteuclid.org/journals/annals-of-applied-probability/volume-32/issue-1/From-the-Bernoulli-factory-to-a-dice-enterprise-via-perfect/10.1214/21-AAP1679.short) and the [Journal of Graph Theory](http://onlinelibrary.wiley.com/doi/10.1002/jgt.22002/abstract).
 - Worked with [Centre for Science and Policy](https://www.csap.cam.ac.uk/) (NLP), [Heathrow airport](https://www.heathrow.com/) (logistics modeling) and [Defence Science and Technology Laboratory](https://www.gov.uk/government/organisations/defence-science-and-technology-laboratory) (AI safety).
 -  Award-winning teacher with experience in all levels and formats, from lecturing master's level courses to providing one-on-one support for underprivileged A-Level students.
 
@@ -50,8 +50,8 @@ header:
 ## Education
 
 **Masters in Computer Science**
-  ~ 4.0 GPA (current average)
-  ~ 2023/09 - Present
+  ~ 4.0 GPA
+  ~ 09/2023 - Present
 
 Georgia Institute of Technology, Atlanta, USA
 
@@ -69,8 +69,8 @@ University of Warwick, Coventry, UK
 
 ## Skills
 
-**Programming Languages:** Python, SQL, Typescript, C, LaTeX, Nix, Lua.
+**Programming Languages:** Python, SQL, Typescript, C, LaTeX, Nix.
 
-**Tools and Frameworks:** Pandas, Numpy, SQLAlchemy, FastAPI, Pydantic, Apache Arrow, Kubernetes, Docker, Apache Iceberg, Snowflake, Azure Cloud, NLTK, ArcticDB, MongoDB, Grafana, Prometheus, OpenTelemtry, Sentry, Kafka, Postgres, Ray, React, NextJS.
+**Tools and Frameworks:** Pandas, Numpy, SQLAlchemy, FastAPI, Pydantic, Apache Arrow, Kubernetes, Docker, Apache Iceberg, Snowflake, Azure Cloud, NLTK, ArcticDB, MongoDB, Grafana, Prometheus, OpenTelemetry, Sentry, Kafka, Postgres, Ray, React, NextJS.
 
 **Collaboration and productivity:** JIRA, Bitbucket, Github, Confluence, Obsidian, Neovim, NixOS.
