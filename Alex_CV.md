@@ -15,18 +15,18 @@ header:
   ~ Man Group
   ~ 07/2023 - 01/2026
 
-- Built an event-driven data quality framework on top of Kafka, Ray and Postgres with a front end in React. Adopted by 3 teams and deployed to over 50 datasets.
+- Led a multi-team initiative to integrate LLM-powered code reviews in Bitbucket used by over 70 repos internally.
 - Enabled annual database cost savings of £250K/year by migrating to a horizontally scaled Apache Arrow Flight server handling 1 GB/s.
+- Built an event-driven data quality framework on top of Kafka, Ray and Postgres with a front end in React. Adopted by 3 teams and deployed to over 50 datasets.
 - Drove initiative to triple datasets onboarding from 50 to 150 datasets per year by moving to a medallion data architecture backed by Iceberg and a low-code custom EL framework.
 - Boosted fund chargeback by £80K/year by implementing Snowflake cost monitoring.
-- Led a multi-team initiative to integrate LLM-powered code reviews in Bitbucket used by over 70 repos internally.
 
 
 **Head of Data**
   ~ CC Data
   ~ 09/2021 - 06/2023
 
-- Reduced Azure cloud storage costs by £60K/year (50%) through tiering policies, data format optimization, and retention strategies.
+- Reduced Azure cloud storage costs by 50% (£60K/year) through tiering policies, data format optimization, and retention strategies.
 - Secured clients worth £60k/year by calculating historical and daily order book metrics on over 100TB of data using NumPy, Docker, and Azure Blob Storage.
 - Expanded product range by researching, prototyping, and developing a blockchain data product to store, analyze, and standardize on-chain data.
 
