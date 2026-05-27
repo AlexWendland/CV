@@ -51,18 +51,18 @@ header:
 
 **Masters in Computer Science**
   ~ 4.0 GPA
-  ~ 09/2023 - Present
+  ~ 09/2023 - Current
 
 Georgia Institute of Technology, Atlanta, USA
 
 **PhD in Mathematics**
-  ~ Generalisations of Cayley graphs and groups
+  ~ Graph Theory, Group Theory, Algebra
   ~ 09/2015 - 03/2020
 
 University of Warwick, Coventry, UK
 
 **Masters in Mathematics**
-  ~ 1st Class Honors (91% average)
+  ~ 1st Class Honors (top grade, 91% average)
   ~ 09/2011 - 07/2015
 
 University of Warwick, Coventry, UK
