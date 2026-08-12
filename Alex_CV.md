@@ -16,18 +16,18 @@ header:
   ~ 07/2023 - 01/2026
 
 - Led a multi-team initiative to integrate LLM-powered code reviews in Bitbucket used by over 70 repos internally.
-- Enabled annual database cost savings of £250K/year by migrating to a horizontally scaled Apache Arrow Flight server handling 1 GB/s.
+- Enabled annual database cost savings of $340K/year by migrating to a horizontally scaled Apache Arrow Flight server handling 1 GB/s.
 - Built an event-driven data quality framework on top of Kafka, Ray and Postgres with a front end in React. Adopted by 3 teams and deployed to over 50 datasets.
 - Drove initiative to triple datasets onboarding from 50 to 150 datasets per year by moving to a medallion data architecture backed by Iceberg and a low-code custom EL framework.
-- Boosted fund chargeback by £80K/year by implementing Snowflake cost monitoring.
+- Boosted fund chargeback by $110K/year by implementing Snowflake cost monitoring.
 
 
 **Head of Data**
   ~ CC Data
   ~ 09/2021 - 06/2023
 
-- Reduced Azure cloud storage costs by 50% (£60K/year) through tiering policies, data format optimization, and retention strategies.
-- Secured clients worth £60k/year by calculating historical and daily order book metrics on over 100TB of data using NumPy, Docker, and Azure Blob Storage.
+- Reduced Azure cloud storage costs by 50% ($80K/year) through tiering policies, data format optimization, and retention strategies.
+- Secured clients worth $80k/year by calculating historical and daily order book metrics on over 100TB of data using NumPy, Docker, and Azure Blob Storage.
 - Expanded product range by researching, prototyping, and developing a blockchain data product to store, analyze, and standardize on-chain data.
 
 
@@ -51,9 +51,10 @@ header:
 
 **Masters in Computer Science**
   ~ 4.0 GPA
-  ~ 09/2023 - Current
+  ~ (Full) 01-08/2026
 
 Georgia Institute of Technology, Atlanta, USA
+  ~ (Part) 09/2023 - 01/2026
 
 **PhD in Mathematics**
   ~ Graph Theory, Group Theory, Algebra
@@ -71,6 +72,6 @@ University of Warwick, Coventry, UK
 
 **Programming Languages:** Python, SQL, Typescript, C, LaTeX, Nix.
 
-**Tools and Frameworks:** Pandas, Numpy, SQLAlchemy, FastAPI, Pydantic, Apache Arrow, Kubernetes, Docker, Apache Iceberg, Snowflake, Azure Cloud, NLTK, ArcticDB, MongoDB, Grafana, Prometheus, OpenTelemetry, Sentry, Kafka, Postgres, Ray, React, NextJS.
+**Tools and Frameworks:** Pandas, Numpy, SQLAlchemy, FastAPI, Pydantic, Apache Arrow, Kubernetes, Terraform, Docker, Apache Iceberg, Snowflake, Azure Cloud, ArcticDB, MongoDB, Grafana, Prometheus, OpenTelemetry, Sentry, Kafka, Postgres, Ray, React, NextJS.
 
 **Collaboration and productivity:** JIRA, Bitbucket, Github, Confluence, Obsidian, Neovim, NixOS.
